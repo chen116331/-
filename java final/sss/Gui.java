@@ -25,51 +25,51 @@ public class Gui extends JFrame implements ActionListener{
 	CheckboxGroup cbg;
 	JComboBox b1;JComboBox b2;JComboBox b3;JComboBox b4;JComboBox b5;
 	JCheckBox c1,c2,c3;
-	String year[]={"1998Äê","1999Äê","2000Äê","2001Äê"};
-	String month[]={"1ÔÂ","2ÔÂ","3ÔÂ","4ÔÂ","5ÔÂ","6ÔÂ","1ÔÂ",
-			"7ÔÂ","8ÔÂ","9ÔÂ","10ÔÂ","11ÔÂ","12ÔÂ"};
-	String day[]={"1ÈÕ","2ÈÕ","3ÈÕ","4ÈÕ","5ÈÕ","6ÈÕ","7ÈÕ","8ÈÕ","9ÈÕ",
-			"10ÈÕ","11ÈÕ","12ÈÕ","13ÈÕ",
-			"14ÈÕ","15ÈÕ","16ÈÕ","17ÈÕ",
-			"18ÈÕ","19ÈÕ","20ÈÕ","21ÈÕ",
-			"22ÈÕ","23ÈÕ","24ÈÕ","25ÈÕ",
-			"26ÈÕ","27ÈÕ","28ÈÕ","29ÈÕ",
-			"30ÈÕ","31ÈÕ"};
+	String year[]={"1999å¹´","2000å¹´"};
+	String month[]={"1æœˆ","2æœˆ","3æœˆ","4æœˆ","5æœˆ","6æœˆ","1æœˆ",
+			"7æœˆ","8æœˆ","9æœˆ","10æœˆ","11æœˆ","12æœˆ"};
+	String day[]={"1æ—¥","2æ—¥","3æ—¥","4æ—¥","5æ—¥","6æ—¥","7æ—¥","8æ—¥","9æ—¥",
+			"10æ—¥","11æ—¥","12æ—¥","13æ—¥",
+			"14æ—¥","15æ—¥","16æ—¥","17æ—¥",
+			"18æ—¥","19æ—¥","20æ—¥","21æ—¥",
+			"22æ—¥","23æ—¥","24æ—¥","25æ—¥",
+			"26æ—¥","27æ—¥","28æ—¥","29æ—¥",
+			"30æ—¥","31æ—¥"};
 	String time[]={"0.5","1.0","1.5","2.0","2.5","3.0"};
-	String score[]={"0.5","1.0","1.5","2.0","2.5","3.0",
-			"3.5","4.0","4.5","5.0","5.5","6.0"};
+	String score[]={"2.0","2.5","3.0"
+			};
 
 	public Gui(){
-		super("Ñ¡¿ÎÏµÍ³");
-		label1=new JLabel("ÇëÊäÈë¸öÈËĞÅÏ¢ºÍËùÑ¡¿Î³Ì£¬Íê³Éºóµ¥»÷È·¶¨¡£           ");
-		label7=new JLabel("ÇëÊäÈë¿ªÉèµÄ¿Î³ÌºÍĞÅÏ¢£¬Íê³Éºóµ¥»÷È·¶¨¡£        ");
+		super("é€‰è¯¾ç³»ç»Ÿ");
+		label1=new JLabel("è¯·è¾“å…¥ä¸ªäººä¿¡æ¯å’Œæ‰€é€‰è¯¾ç¨‹ï¼Œå®Œæˆåå•å‡»ç¡®å®šã€‚           ");
+		label7=new JLabel("è¯·è¾“å…¥å¼€è®¾çš„è¯¾ç¨‹å’Œä¿¡æ¯ï¼Œå®Œæˆåå•å‡»ç¡®å®šã€‚        ");
 		b1=new JComboBox(year);
 		b2=new JComboBox(month);
 		b3=new JComboBox(day);
 		b4=new JComboBox(time);
 		b5=new JComboBox(score);
-		label2=new JLabel("Ñ§ÉúĞÕÃû£º");
-		label8=new JLabel("½ÌÊ¦ĞÕÃû£º");
-		label3=new JLabel("ĞÔ±ğ:");
+		label2=new JLabel("å­¦ç”Ÿå§“åï¼š");
+		label8=new JLabel("æ•™å¸ˆå§“åï¼š");
+		label3=new JLabel("æ€§åˆ«:");
 		cbg = new CheckboxGroup(); 
-		label9=new JLabel("¿Î³ÌÃû³Æ£º");
-		label6=new JLabel("Ñ§ºÅ£º");
-		label4=new JLabel("ÉúÈÕ£º");
-		label10=new JLabel("¿Î³Ì±àºÅ£º");
-		label5=new JLabel("¿Î³Ì£º");
-		label11=new JLabel("ÉÏ¿ÎµØµã£º");
-		label12=new JLabel("¿ÎÊ±£º");
-		label13=new JLabel("Ñ§·Ö£º");
+		label9=new JLabel("è¯¾ç¨‹åç§°ï¼š");
+		label6=new JLabel("å­¦å·ï¼š");
+		label4=new JLabel("ç”Ÿæ—¥ï¼š");
+		label10=new JLabel("è¯¾ç¨‹ç¼–å·ï¼š");
+		label5=new JLabel("è¯¾ç¨‹ï¼š");
+		label11=new JLabel("ä¸Šè¯¾åœ°ç‚¹ï¼š");
+		label12=new JLabel("è¯¾æ—¶ï¼š");
+		label13=new JLabel("å­¦åˆ†ï¼š");
 
 		c1=new JCheckBox("pyhton");
 		c2=new JCheckBox("c++");
 		c3=new JCheckBox("Java");
 		ta1=new TextArea(17,35);
 		ta2=new TextArea(17,35);
-		button1=new JButton("È·¶¨");
-		button2=new JButton("È¡Ïû");
-		button3=new JButton("È·¶¨");
-		button4=new JButton("È¡Ïû");
+		button1=new JButton("ç¡®å®š");
+		button2=new JButton("å–æ¶ˆ");
+		button3=new JButton("ç¡®å®š");
+		button4=new JButton("å–æ¶ˆ");
 		t1=new JTextField("",5);
 		t2=new JTextField("",10);
 		t3=new JTextField("",5);
@@ -89,8 +89,8 @@ public class Gui extends JFrame implements ActionListener{
 		c.add(label2);
 		c.add(t1);
 		c.add(label3);
-		c.add(new Checkbox("ÄĞ", cbg, true)); 
-		c.add(new Checkbox("Å®", cbg, false));
+		c.add(new Checkbox("ç”·", cbg, true)); 
+		c.add(new Checkbox("å¥³", cbg, false));
 		c.add(new JLabel("           "));
 		c.add(label8);
 		c.add(t3);
@@ -150,13 +150,13 @@ public class Gui extends JFrame implements ActionListener{
 	    	Majorattribute majorattribute = null;
 		    String str="";
 
-		    File file=new File("C:\\ĞÂ½¨ÎÄ¼ş¼Ğ\\a.txt");
+		    File file=new File("C:\\æ–°å»ºæ–‡ä»¶å¤¹\\a.txt");
 
 		    try {
 
 		        FileInputStream in=new FileInputStream(file);
 
-		        // size  Îª×Ö´®µÄ³¤¶È £¬ÕâÀïÒ»´ÎĞÔ¶ÁÍê
+
 
 		        int size=in.available();
 
@@ -181,23 +181,23 @@ public class Gui extends JFrame implements ActionListener{
 
 	    	
 	    	if(e.getSource()==button1)
-				ta1.append("ĞÕÃû£º"+t1.getText()+"\n"+
-				"Ñ§ºÅ£º"+t2.getText()+"\n"+"ĞÔ±ğ£º"
+				ta1.append("å§“åï¼š"+t1.getText()+"\n"+
+				"å­¦å·ï¼š"+t2.getText()+"\n"+"æ€§åˆ«ï¼š"
 				+cbg.getSelectedCheckbox().getLabel()+
-				"\n"+"ÉúÈÕ£º"+b1.getSelectedItem()+b2.getSelectedItem()
+				"\n"+"ç”Ÿæ—¥ï¼š"+b1.getSelectedItem()+b2.getSelectedItem()
 				+b3.getSelectedItem()+"\n");
 
 			
 	    	
 	    			if(c1.isSelected() && e.getSource()==button1)
-					ta1.append( "¿Î³Ì£º" + c1.getLabel()+" "+p.toString()+"\n");
+					ta1.append( "è¯¾ç¨‹ï¼š" + c1.getLabel()+" "+p.toString()+"\n");
 
 					students = new Students(t1.getText(),t2.getText(),cbg.getSelectedCheckbox().getLabel(),p);
 					StringBuffer s1=new StringBuffer();
 					s1.append(students);
 					s1.append(p);
 					try {
-						FileWriter fw=new FileWriter("C:\\ĞÂ½¨ÎÄ¼ş¼Ğ\\b.txt");
+						FileWriter fw=new FileWriter("C:\\æ–°å»ºæ–‡ä»¶å¤¹\\b.txt");
 						fw.write(s1.toString() + "\n");
 						fw.close();
 						} 
@@ -207,13 +207,13 @@ public class Gui extends JFrame implements ActionListener{
 						}
 					
 					if(c2.isSelected() && e.getSource()==button1)
-					ta1.append( "¿Î³Ì£º" + c2.getLabel()+" "+q.toString()+"\n");
+					ta1.append( "è¯¾ç¨‹ï¼š" + c2.getLabel()+" "+q.toString()+"\n");
 					students = new Students(t1.getText(),t2.getText(),cbg.getSelectedCheckbox().getLabel(),q);
 					StringBuffer s_1=new StringBuffer();
 					s_1.append(students);
 					s_1.append(p);
 					try {
-						FileWriter fw=new FileWriter("C:\\ĞÂ½¨ÎÄ¼ş¼Ğ\\b.txt");
+						FileWriter fw=new FileWriter("C:\\æ–°å»ºæ–‡ä»¶å¤¹\\b.txt");
 						fw.write(s_1.toString() + "\n");
 						fw.close();
 						} 
@@ -224,7 +224,7 @@ public class Gui extends JFrame implements ActionListener{
 					
 					
 					if(c3.isSelected() && e.getSource()==button1)
-					ta1.append( "¿Î³Ì£º" + c3.getLabel()+" "+r.toString()+"\n");
+					ta1.append( "è¯¾ç¨‹ï¼š" + c3.getLabel()+" "+r.toString()+"\n");
 
 					students = new Students(t1.getText(),t2.getText(),cbg.getSelectedCheckbox().getLabel(),r);
 
@@ -234,7 +234,7 @@ public class Gui extends JFrame implements ActionListener{
 					s_2.append(students);
 					s_2.append(p);
 					try {
-						FileWriter fw=new FileWriter("C:\\ĞÂ½¨ÎÄ¼ş¼Ğ\\b.txt");
+						FileWriter fw=new FileWriter("C:\\æ–°å»ºæ–‡ä»¶å¤¹\\b.txt");
 						fw.write(s_2.toString() + "\n");
 						fw.close();
 						} 
@@ -251,10 +251,10 @@ public class Gui extends JFrame implements ActionListener{
 			}
 
 			if(e.getSource()==button3)
-				ta2.append("½ÌÊ¦ĞÕÃû£º"+t3.getText()+"\n"+
-				"¿Î³ÌÃû³Æ£º"+t4.getText()+"\n"+"ÉÏ¿ÎµØµã£º"+t6.getText()
-				+"\n"+"¿Î³Ì±àºÅ£º"+t5.getText()+"\n"+"¿ÎÊ±£º"+b4.getSelectedItem()
-				+"\n"+"Ñ§·Ö£º"+b5.getSelectedItem()+"\n");
+				ta2.append("æ•™å¸ˆå§“åï¼š"+t3.getText()+"\n"+
+				"è¯¾ç¨‹åç§°ï¼š"+t4.getText()+"\n"+"ä¸Šè¯¾åœ°ç‚¹ï¼š"+t6.getText()
+				+"\n"+"è¯¾ç¨‹ç¼–å·ï¼š"+t5.getText()+"\n"+"è¯¾æ—¶ï¼š"+b4.getSelectedItem()
+				+"\n"+"å­¦åˆ†ï¼š"+b5.getSelectedItem()+"\n");
 			if(e.getSource()==button3)
 				ta2.append("\n");
 				majorattribute = new Majorattribute(t4.getText(),t5.getText(),
