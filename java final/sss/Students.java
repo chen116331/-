@@ -13,13 +13,13 @@ public class Students extends Father{
 		}
 
 	public String toString() {
-	return "Ñ§ÉúĞÅÏ¢:  ĞÕÃû£º" + Name
-    + "    Ñ§ºÅ£º" + Num + "   ĞÔ±ğ£º" + Sex + "   " + a;
+	return "å­¦ç”Ÿä¿¡æ¯:  å§“åï¼š" + Name
+    + "    å­¦å·ï¼š" + Num + "   æ€§åˆ«ï¼š" + Sex + "   " + a;
 	}
 	public void setName(String name){
 		Name = name;
 	}
-//×Ô¶¨Òåsetº¯Êı£¬ÉèÖÃĞŞ¸ÄÃû×ÖµÄ·½·¨
+
 	public void setCourse(Majorattribute b){
 		a = b;
 	}
