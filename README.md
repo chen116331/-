@@ -80,19 +80,21 @@ File file=new File("C:\\Users\\18301\\Desktop\\课程信息.txt");
 		    }
 		    //打开文件，读取信息，同时排除文本空字符异常
         StringBuffer s_2=new StringBuffer();
-					s_2.append(students);
-					s_2.append(p);
-					try {
-						FileWriter fw=new FileWriter("C:\\Users\\18301\\Desktop\\test.txt");
-						fw.write(s_2.toString() + "\n");
-						fw.close();
+		s_2.append(students);
+		s_2.append(p);
+		try {
+		FileWriter fw=new FileWriter("C:\\Users\\18301\\Desktop\\test.txt");
+		fw.write(s_2.toString() + "\n");
+		fw.close();
 						} 
-					catch (IOException n) 
-						{
-						n.printStackTrace();
+		catch (IOException n) 
+				{
+		n.printStackTrace();
 						}
 六、运行截图
 
 https://github.com/chen116331/-/blob/master/1575792843(1).png
 https://github.com/chen116331/-/blob/master/1575793134(1).png
-
+https://github.com/chen116331/-/blob/master/1575793174(1).png
+七、编程感
+最后一次编程实验综合性很强，对于我来说难度很大。这次实验将前几次的实验相结合同时加入文件的读入，更加完善了选课系统。在设计GUI界面上我借鉴了同学的意见，在编程过程中我遇见了无法理解文件读入的流程、变量未赋值而报错等许多问题，但我虚心向优秀的同学提问最终都一一解决了。通过这次编程我理解到了这门课程应用的灵活性，增加了我对java语言的兴趣。
